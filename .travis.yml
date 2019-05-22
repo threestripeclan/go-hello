@@ -1,0 +1,11 @@
+language: generic
+script:
+  - bash test.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: v7jo+1iO5BOC4T+FMW9+Bxv/HOWDjCA3nqyK3pOseO+G9Y1rsG132dmAQFws7xT63Hk/BVZyaSrvrby1TTg19VI6B1RQHlYCShD7A7LYtiKUoV3F+2warFSjikDZsKHHyojnPfThDFiD78cvg/C27WM/MvojzpMvVYCzTP5PQl7rANavnD9ysRXhSHnA9eDjyFjyz5EeLb9IuiV2QXOir31zmDa16fjYbhm+MF2IzmvzFN00iZ1+Sy+HN4DaXMnUSWigXRup36pY4h8hp6uH4RqQBhRD1ebiWonzBBQ1E6Q2gvwTlgntkWMPXIIY0w5pHP+C7JhBMCToJt/33N2AtprLTJ35oAJfTMQN1DHOLktBlR1pNYlOvuE8jOprYYhgNMVh2i/+VXI3FMP8VTtdv6jHByRndGDOpoo4xyOkBZ9OLubb8Tbvma8vBZnr76LEe/Ew+RNMOVPdPx9FdvWtquW8sUH077gSMrASvJ202vF99+wkeKv66T+ktGh/Dmp0vMcO8nh6mQiZ/sK+t1XsW9AWX6NAOa5tOFhR2VlFCXn579K7b03ULMNy45ILNclS4ZI5L/avk89FGPvFZCD6VZTb+q+nJoBLOSwURCz0ZHHfM48iHvm851Btk9ylrZrVnig5G3ceKlOzToEDoZgfYwBZkvzsHcmzsd2z5EmkzoY=
+  file: hello
+  on:
+    repo: threestripeclan/go-hello
+    tags: true
