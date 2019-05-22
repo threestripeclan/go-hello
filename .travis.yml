@@ -1,5 +1,6 @@
 language: generic
 script:
+  - go build hello.go
   - bash test.sh
 deploy:
   provider: releases
