@@ -1,4 +1,4 @@
-language: generic
+language: go
 script:
   - go build hello.go
   - bash test.sh
